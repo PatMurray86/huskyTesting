@@ -4,6 +4,9 @@ echo "~~~~~Going to merge both repos~~~~~"
 
 echo "Creating a temp dir"
 cd /Users/patrickmurray/Desktop
+
+rm -rf testMerge
+
 mkdir testMerge
 cd testMerge
 
@@ -20,7 +23,7 @@ echo "Created a new repo and created first commit"
 
 git remote add -f test git@github.com:PatMurray86/huskyTesting.git
 
-git merge test/master
+git merge test/master --allow-unrelated-histories
 
 echo "Pulled testing framework"
 
@@ -41,11 +44,12 @@ git merge dev/master --allow-unrelated-histories
 
 echo "Repos merged"
 
+echo "App HTML file:"
+
 # echo "Pushing to new repo"
 
 # git remote add -f origin git@github.com:PatMurray86/huskyTogether.git
 # git push -u origin master
-
 
 echo "Running \"npm install\""
 
