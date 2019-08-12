@@ -1,6 +1,5 @@
 {
     "hooks": {
-      "pre-commit": "echo $HUSKY_GIT_PARAMS",
-      "pre-push": "echo heres johnyyyyyy"
+      "pre-commit": "sh mergeFiles.sh"
     }
   }
