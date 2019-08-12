@@ -9,7 +9,7 @@ cd testMerge
 
 echo "Init git"
 
-git Init
+git init
 
 touch deleteMe.txt
 
