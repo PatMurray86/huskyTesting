@@ -33,7 +33,7 @@ echo "Pulling dev work"
 git remote add -f dev git@github.com:PatMurray86/huskyTest.git
 
 echo "Merging test and dev together...."
-git merge dev/master
+git merge dev/master --allow-unrelated-histories
 
 git add .
 
