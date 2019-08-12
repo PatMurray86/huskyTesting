@@ -35,15 +35,22 @@ git remote add -f dev git@github.com:PatMurray86/huskyTest.git
 echo "Merging test and dev together...."
 git merge dev/master --allow-unrelated-histories
 
-git add .
+# git add .
 
-git commit -m "Both should be merged (fingers crossed)"
+# git commit -m "Both should be merged (fingers crossed)"
 
 echo "Repos merged"
 
-echo "Pushing to new repo"
+# echo "Pushing to new repo"
 
-git remote add -f origin git@github.com:PatMurray86/huskyTogether.git
-git push -u origin master
+# git remote add -f origin git@github.com:PatMurray86/huskyTogether.git
+# git push -u origin master
 
-echo "Both should me merged in repo https://github.com/PatMurray86/huskyTogether"
+
+echo "Running \"npm install\""
+
+npm i
+
+echo "Running tests"
+
+npm run test
